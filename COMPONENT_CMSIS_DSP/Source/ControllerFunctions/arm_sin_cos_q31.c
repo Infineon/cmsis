@@ -26,9 +26,6 @@
  * limitations under the License.
  */
 
-#if (!defined(ARM_DSP_CONFIG_TABLES) || defined(ARM_FAST_ALLOW_TABLES)) && \
-  (!defined(ARM_DSP_CONFIG_TABLES) || defined(ARM_ALL_FAST_TABLES) || defined(ARM_TABLE_SIN_Q31))
-
 #include "dsp/controller_functions.h"
 #include "arm_common_tables.h"
 
@@ -111,5 +108,3 @@ void arm_sin_cos_q31(
 /**
   @} end of SinCos group
  */
-#endif /* (!defined(ARM_DSP_CONFIG_TABLES) || defined(ARM_FAST_ALLOW_TABLES)) && \
-  (!defined(ARM_DSP_CONFIG_TABLES) || defined(ARM_ALL_FAST_TABLES) || defined(ARM_TABLE_SIN_Q31)) */

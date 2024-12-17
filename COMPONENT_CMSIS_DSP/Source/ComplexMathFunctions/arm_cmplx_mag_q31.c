@@ -26,9 +26,6 @@
  * limitations under the License.
  */
 
-
-#if !((defined (ARM_MATH_HELIUM) || defined(ARM_MATH_MVEI))  && !defined(ARM_MATH_AUTOVECTORIZE)) || \
-  (!defined(ARM_DSP_CONFIG_TABLES) || defined(ARM_ALL_FAST_TABLES) || defined(ARM_TABLE_FAST_SQRT_Q31_MVE))
 #include "dsp/complex_math_functions.h"
 
 /**
@@ -202,6 +199,3 @@ void arm_cmplx_mag_q31(
 /**
   @} end of cmplx_mag group
  */
-
-#endif /* !((defined (ARM_MATH_HELIUM) || defined(ARM_MATH_MVEI))  && !defined(ARM_MATH_AUTOVECTORIZE)) || \
-  (!defined(ARM_DSP_CONFIG_TABLES) || defined(ARM_ALL_FAST_TABLES) || defined(ARM_TABLE_FAST_SQRT_Q31_MVE)) */

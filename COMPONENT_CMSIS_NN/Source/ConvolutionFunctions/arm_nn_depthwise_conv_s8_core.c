@@ -37,7 +37,7 @@
  *
  */
 
-__attribute__((optimize("-O0"))) q7_t *arm_nn_depthwise_conv_s8_core(const q7_t *row,
+q7_t *arm_nn_depthwise_conv_s8_core(const q7_t *row,
                                     const q15_t *col,
                                     const uint16_t num_ch,
                                     const int32_t *out_shift,
